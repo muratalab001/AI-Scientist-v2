@@ -63,5 +63,3 @@ def main():
     except Exception as e:
         print(f"予期しないエラーが発生しました: {e}")
 
-if __name__ == "__main__":
-    main()

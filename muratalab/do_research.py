@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # 実行するスクリプトのパス
-script_path = "./do_research.sh"
+script_path = "./muratalab/do_research.sh"
 
 # スクリプトが存在するか確認
 if not os.path.exists(script_path):

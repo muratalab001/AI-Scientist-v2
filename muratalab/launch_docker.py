@@ -24,7 +24,7 @@ def main():
 
     # ボリュームマウント: ホストディレクトリ → /tf
     volumes = {
-        "/home/test/Documents/MasakiMurata/AI-Scientist-v2": {
+        "/home/test/Documents/GitHub": {
             "bind": "/tf",
             "mode": "rw"
         }

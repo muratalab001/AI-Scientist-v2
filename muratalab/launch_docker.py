@@ -40,7 +40,8 @@ def main():
         # detach=False にするとコマンド完了まで待機し標準出力を返却
         output = client.containers.run(
             image=image_name,
-            command=["python3", "./muratalab/test.py"],
+            #command=["python3", "./muratalab/test.py"],
+            command = ["python3", "--version"],
             remove=True,               # --rm
             ports=ports,
             volumes=volumes,

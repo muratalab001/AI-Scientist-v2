@@ -1,0 +1,21 @@
+[
+    {
+        "Name": "neural_topological_soliton_phi4",
+        "Title": "Neural Network Modeling and Prediction of Topological Solitons in ϕ⁴ Theory",
+        "Short Hypothesis": "Physics-informed neural networks (PINNs) can learn both the static kink profiles and dynamical interactions of topological solitons in the one-dimensional ϕ⁴ field theory with accuracy comparable to spectral solvers, while offering speed-ups in inference.",
+        "Related Work": [
+    "Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics.",
+    "Salvatore Cuomo, Vincenzo Schiano di Cola, Fabio Giampaolo, Gianluigi Rozza, Maziar Raissi, Francesco Piccialli. (2022). Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next. arXiv:2201.05624",
+    "Dauxois, T., & Peyrard, M. (2006). Physics of Solitons. Cambridge University Press."
+        ],
+        "Abstract": "We propose to develop and benchmark physics-informed neural networks for modeling topological solitons in the one-dimensional ϕ⁴ scalar field theory. First, we train PINNs to recover the analytic static kink solution under fixed boundary conditions and topological charge constraints. Next, we extend the framework to dynamical evolution: networks learn time-dependent soliton trajectories, collisions, and radiation effects. We compare performance—accuracy, stability, and runtime—against pseudospectral and finite-difference solvers. Finally, we explore architecture variants (fully connected, convolutional, and equivariant networks) and assess generalization to perturbed initial conditions and multi-soliton configurations.",
+        "Experiments": [
+    "1. Static Kink Recovery: Train a PINN to reproduce the analytic ϕ⁴ kink profile. Measure L² error and convergence rate.",
+    "2. Single-Soliton Dynamics: Learn the time evolution of a moving kink. Compare predicted trajectories and field profiles to spectral solver outputs.",
+    "3. Kink–Antikink Collisions: Simulate collisions at varying impact velocities. Evaluate the network’s ability to capture radiation emission and rebound phenomena.",
+    "4. Generalization Tests: Introduce random perturbations to initial field profiles and multi-soliton setups. Quantify degradation in predictive accuracy.",
+    "5. Architecture Ablations: Compare fully connected PINNs, convolutional PINNs, and symmetry-equivariant neural operators on all above tasks."
+        ],
+        "Risk Factors and Limitations": "Training PINNs on highly nonlinear, topologically nontrivial solutions can suffer from optimization difficulties and poor convergence. The networks may struggle to encode exact topological charge conservation, leading to drift over long time horizons. Capturing fine radiation during soliton collisions requires high resolution, which may negate speed-up advantages. Black-box models limit interpretability and rigorous error estimates; overfitting to specific initial conditions can impair generalization to new regimes."
+        }
+]

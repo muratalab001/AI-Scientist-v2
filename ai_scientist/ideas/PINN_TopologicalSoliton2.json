@@ -6,7 +6,7 @@
         "Related Work": [
     "Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics.",
     "Salvatore Cuomo, Vincenzo Schiano di Cola, Fabio Giampaolo, Gianluigi Rozza, Maziar Raissi, Francesco Piccialli. (2022). Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next. arXiv:2201.05624",
-    "Dauxois, T., & Peyrard, M. (2006). Physics of Solitons. Cambridge University Press."
+    "Dauxois, T., & Peyrard, M. (2006). Physics of Solitons. Cambridge University Press.",
     "Koji Hashimoto, Koshiro Matsuo, Masaki Murata, Gakuto Ogiwara. (2024). Comparative Study of Neural Network Methods for Solving Topological Solitons. arXiv:2411.14942"
         ],
         "Abstract": "We propose to develop and benchmark physics-informed neural networks for modeling topological solitons in the one-dimensional phi4 scalar field theory. First, we train PINNs to recover the analytic static kink solution by just training PINN with the fixed boundary conditions and the equation of motion. Then, we compare the resultant solution with the analytic solution, and see the recovery. Finally, we compare various architectures and methods of training, and compare the performance of PINN against other non-NN methods such as finite-difference solvers.",

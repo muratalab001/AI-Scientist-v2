@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "holographic_deep_learning_material",
+        "Title": "Emergent holographic model for various materials in the AdS/DL correspondence",
+        "Short Hypothesis": "Use of material data other than the one used in the original paper (https://arxiv.org/abs/1802.08313) may provide, through the same strategy given in the original paper, will give different emergent spacetime, and the difference of the geometry can be understood in terms of strong correlation in the material.",
+        "Related Work": [
+    "Koji Hashimoto, Sotaro Sugishita, Akinori Tanaka, Akio Tomiya, (2018), Deep Learning and AdS/CFT, https://arxiv.org/abs/1802.08313",
+    "Koji Hashimoto, Sotaro Sugishita, Akinori Tanaka, Akio Tomiya, (2018), Deep Learning and Holographic QCD, https://arxiv.org/abs/1809.10536",
+    "Koji Hashimoto, Koshiro Matsuo, Masaki Murata, Gakuto Ogiwara, Daichi Takeda, (2024), Machine-learning emergent spacetime from linear response in future tabletop quantum gravity experiments, https://arxiv.org/abs/2411.16052"
+        ],
+        "Abstract": "We present a data-driven holographic modeling approach by mapping temperature-dependent magnetization versus magnetic field data onto boundary conditions for a bulk scalar field. Following the strategy of Hashimoto et al. 1802.08313, we recast the scalar field evolution in an asymptotically Anti-deSitter (AdS) space as a discretized deep neural network whose trainable parameters are interpreted as components of the emergent bulk metric. In our analysis we include a phi4 potential term so that the evolution equation for the conjugate momentum includes a nonlinear contribution. We consider various materials other than the one used in Hashimoto et al.. Synthetic boundary datasets at 10K, 50K, and 100K are generated for each material and used to train the network. We extract the emergent bulk metric and compare the results between the two systems. Our findings indicate that the emergent geometry is sensitive to both temperature and material composition.",
+        "Experiments": [
+    "1. Reproduction of the codes and result provided in the original paper https://arxiv.org/abs/1802.08313",
+    "2. Finding a similar material data from arxiv papers on magnetization curve for strongly correlated materials.",
+    "3. Use the data of the found material in the experiment 2 and apply the same method used in https://arxiv.org/abs/1802.08313 to find an emergent bulk metric.",
+    "4. Compare the resultant metric and the emergent metric found in https://arxiv.org/abs/1802.08313 and discuss how the material difference can be mapped to the difference of the emergent metrics."
+        ],
+        "Risk Factors and Limitations": "Loss function and the regularization needs to follow precisely what was used in https://arxiv.org/abs/1802.08313 otherwise the bulk metric cannot be interpreted as a holographic dual. New material data may be difficult to access."
+        }
+]

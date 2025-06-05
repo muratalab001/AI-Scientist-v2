@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "neural_topological_soliton_phi4",
+        "Title": "Neural Network Modeling and Prediction of Topological Solitons in the phi4 Scalar Field Theory",
+        "Short Hypothesis": "Physics-informed neural networks (PINNs) can learn the static kink profile of topological solitons in the one-dimensional phi4 scalar field theory with accuracy comparable to spectral solvers, while offering speed-ups in inference.",
+        "Related Work": [
+    "Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics.",
+    "Salvatore Cuomo, Vincenzo Schiano di Cola, Fabio Giampaolo, Gianluigi Rozza, Maziar Raissi, Francesco Piccialli. (2022). Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next. arXiv:2201.05624",
+    "Dauxois, T., & Peyrard, M. (2006). Physics of Solitons. Cambridge University Press."
+    "Koji Hashimoto, Koshiro Matsuo, Masaki Murata, Gakuto Ogiwara.  (2024). Comparative Study of Neural Network Methods for Solving Topological Solitons. 	arXiv:2411.14942 [hep-th] "
+        ],
+        "Abstract": "We propose to develop and benchmark physics-informed neural networks for modeling topological solitons in the one-dimensional phi4 scalar field theory. First, we train PINNs to recover the analytic static kink solution by just training PINN with the fixed boundary conditions and the equation of motion. Then, we compare the resultant solution with the analytic solution, and see the recovery. Finally, we compare various architectures and methods of training, and compare the performance of PINN against other non-NN methods such as finite-difference solvers.",
+        "Experiments": [
+    "1. Static Kink Recovery: Train a PINN to reproduce the analytic phi4 kink profile. In the Loss function, just add the loss for the equation of motion and the boundary condition far away from the soliton. Measure L2 error and convergence rate.",
+    "2. Architecture Ablations: Compare fully connected PINNs, convolutional PINNs, and symmetry-equivariant neural operators.",
+    "3. Comparison to non-NN methods: Try some conventional solvers for getting a solution of the kink, and compare the accuracy and efficiency wit hthe PINN method."
+        ],
+        "Risk Factors and Limitations": "Training PINNs on highly nonlinear, topologically nontrivial solutions can suffer from optimization difficulties and poor convergence. The soliton location is a zero mode and various solutions are obtained, so the comparison with the exact analytic solution needs to be done up to the change of the soliton location. The networks may struggle to encode exact topological charge conservation, leading to drift over long time horizons. Black-box models limit interpretability and rigorous error estimates; overfitting to specific initial conditions can impair generalization to new regimes."
+        }
+]
